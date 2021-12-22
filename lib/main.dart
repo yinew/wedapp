@@ -8,32 +8,13 @@ import 'package:us/introduction_animation/components/top_back_skip_view.dart';
 import 'package:us/introduction_animation/components/welcome_view.dart';
 import 'package:flutter/material.dart';
 
-main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text("Test"),
-          ),
-          body: HomePage(),
-        ));
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: RaisedButton(
-          child: Text('按鈕'),
-        ));
-  }
+void main() {
+  runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: IntroductionAnimationScreen(),
+    ),
+  );
 }
 
 class IntroductionAnimationScreen extends StatefulWidget {
@@ -45,8 +26,7 @@ class IntroductionAnimationScreen extends StatefulWidget {
 }
 
 class _IntroductionAnimationScreenState
-    extends State<IntroductionAnimationScreen>
-    with TickerProviderStateMixin {
+    extends State<IntroductionAnimationScreen> with TickerProviderStateMixin {
   AnimationController? _animationController;
 
   @override

@@ -65,7 +65,7 @@ class WelcomeView extends StatelessWidget {
                 child: Container(
                   constraints: BoxConstraints(maxWidth: 350, maxHeight: 350),
                   child: Image.asset(
-                    'assets/introduction_animation/welcome.png',
+                    'assets/welcome.png',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -81,7 +81,7 @@ class WelcomeView extends StatelessWidget {
                 padding:
                     EdgeInsets.only(left: 64, right: 64, top: 16, bottom: 16),
                 child: Text(
-                  "Stay organised and live stress-free with you-do app",
+                  "歡迎參觀我們的APP!",
                   textAlign: TextAlign.center,
                 ),
               ),
